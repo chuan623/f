@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Power BI降雨量圖</title>
+    <style>
+        /* 背景使用暖色調漸層 */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FFDEAD 0%, #FFD580 50%, #FFA07A 100%);
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px 30px 40px 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(255, 140, 0, 0.18);
+        }
+        h1 {
+            text-align: center;
+            color: #DC7633;
+            margin-bottom: 28px;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        .powerbi-frame {
+            display: flex;
+            justify-content: center;
+        }
+        iframe {
+            width: 900px;
+            height: 550px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(255, 87, 34, 0.13);
+            background: #fff7e6;
+        }
+        @media (max-width: 950px) {
+            iframe {
+                width: 98vw;
+                height: 60vw;
+                min-height: 350px;
+                max-width: 98vw;
+            }
+            .container {
+                padding: 12px 2vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Power BI降雨量圖</h1>
+        <div class="powerbi-frame">
+            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGM4MDEyODAtNTcyYi00ZDBiLThiYzMtNzU1NDkyNjE4NTQ2IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
